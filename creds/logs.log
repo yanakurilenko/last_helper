@@ -1,0 +1,4 @@
+2024-05-11 17:28:32,943 FILE: bot.py IN: <module> MESSAGE: programm start
+2024-05-11 17:28:32,944 FILE: database.py IN: create_database MESSAGE: DATABASE: База данных создана
+2024-05-11 17:28:36,739 FILE: __init__.py IN: infinity_polling MESSAGE: Infinity polling: polling exited
+2024-05-11 17:28:36,739 FILE: __init__.py IN: infinity_polling MESSAGE: Break infinity polling
