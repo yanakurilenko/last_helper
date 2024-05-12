@@ -1,5 +1,4 @@
-from dotenv import load_dotenv
-from os import getenv
+
 TOKEN = '7036098567:AAEW7SccjkpJVjmmhqM6zB2Yd7HcfTtmby4'
 FOLDER_ID = "b1g3bcb59cje2qfhu2lr"
 IAM_TOKEN = 't1.9euelZqRkcyRipmOy8-Ylo3Ix8ycme3rnpWaip7OnZWYzpLPmZKXjs6bjJ7l8_ccHH1N-e8_RD96_d3z91xKek357z9EP3r9zef1656VmpqTz5aalpPLmY-MzJyKxo-N7_zF656VmpqTz5aalpPLmY-MzJyKxo-NveuelZqRjs2NmsadjMjOypWNnZaKzrXehpzRnJCSj4qLmtGLmdKckJKPioua0pKai56bnoue0oye.mLfhmvhKeX7A30R3lyrI5XmT_lTH1ZKfk9e_gutWg63bc6U_NaOvE96o9Vu2f4BbSU0vT5oeClEnnUXGn-hJAw'
