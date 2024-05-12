@@ -1,6 +1,6 @@
 import sqlite3
 import logging
-from config import DB_FILE, ADMINS_IDS
+from config import DB_FILE
 import os
 '''
 # Путь к директории логов

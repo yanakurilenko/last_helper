@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 from telebot.types import Message
 import logging
-from config import COUNT_LAST_MSG, ADMINS_IDS
+from config import COUNT_LAST_MSG
 from database import add_message, create_database, select_n_last_messages
 from validators import check_number_of_users, is_gpt_token_limit, is_stt_block_limit, is_tts_symbol_limit
 from gpt import ask_gpt
@@ -204,7 +204,7 @@ def tts(message: Message):
 
     tts_symbol, error_message = is_tts_symbol_limit(user_id, text)
 
-    if error_message and user_id not in ADMINS_IDS:
+    if error_message:
         bot.send_message(user_id, error_message)
         return
 

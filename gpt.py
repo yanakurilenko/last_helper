@@ -2,8 +2,8 @@ import json
 
 import requests
 import logging
-from config import MAX_GPT_TOKENS, SYSTEM_PROMPT, IAM_TOKEN, FOLDER_ID, TOKENIZE_URL, GPT_MODEL, GPT_URL, ADMINS_IDS
-from creds import get_creds  # модуль для получения токенов
+from config import MAX_GPT_TOKENS, SYSTEM_PROMPT, IAM_TOKEN, FOLDER_ID, TOKENIZE_URL, GPT_MODEL, GPT_URL
+
 
 
 def count_gpt_tokens(messages):
