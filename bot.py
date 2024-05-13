@@ -2,14 +2,14 @@ import telebot
 from telebot import types
 from telebot.types import Message
 import logging
-from config import COUNT_LAST_MSG
+from config import COUNT_LAST_MSG, TOKEN
 from database import add_message, create_database, select_n_last_messages
 from validators import check_number_of_users, is_gpt_token_limit, is_stt_block_limit, is_tts_symbol_limit
 from gpt import ask_gpt
 from speechkit import speech_to_text, text_to_speech
 import os
 
-TOKEN = '7036098567:AAEW7SccjkpJVjmmhqM6zB2Yd7HcfTtmby4'
+
 
 # Инициализация бота с загруженным токеном
 bot = telebot.TeleBot(TOKEN)

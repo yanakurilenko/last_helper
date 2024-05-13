@@ -2,28 +2,6 @@ import sqlite3
 import logging
 from config import DB_FILE
 import os
-'''
-# Путь к директории логов
-log_directory = 'creds'
-log_file = 'logs.log'
-full_log_path = os.path.join(log_directory, log_file)
-
-# Создание директории, если она не существует
-if not os.path.exists(log_directory):
-    os.makedirs(log_directory)
-
-# Создание файла логов, если он не существует
-if not os.path.isfile(full_log_path):
-    with open(full_log_path, 'w'):
-        pass  # Просто создаем файл, если он еще не существует
-
-# Теперь можно безопасно инициализировать логгер
-logging.basicConfig(filename=full_log_path, level=logging.DEBUG,
-                    format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="a")
-
-logging.basicConfig(filename=LOGS, level=logging.DEBUG,
-                    format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="a")
-'''
 
 def create_database():
     try:

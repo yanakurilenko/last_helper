@@ -1,6 +1,6 @@
 import logging
 import math
-from config import MAX_USERS, MAX_USER_GPT_TOKENS, MAX_USER_STT_BLOCKS, MAX_USER_TTS_SYMBOLS
+from config import MAX_USERS, MAX_USER_GPT_TOKENS, MAX_USER_STT_BLOCKS, MAX_USER_TTS_SYMBOLS, TOKEN
 from database import count_users, count_all_limits
 from database import add_message, create_database, select_n_last_messages
 from gpt import count_gpt_tokens
@@ -22,30 +22,6 @@ logging.basicConfig(
 
 )
 
-'''import os
-
-# Путь к директории логов
-log_directory = 'creds'
-log_file = 'logs.log'
-full_log_path = os.path.join(log_directory, log_file)
-import logging
-
-# Создание директории, если она не существует
-if not os.path.exists(log_directory):
-    os.makedirs(log_directory)
-
-# Создание файла логов, если он не существует
-if not os.path.isfile(full_log_path):
-    with open(full_log_path, 'w'):
-        pass  # Просто создаем файл, если он еще не существует
-
-# Теперь можно безопасно инициализировать логгер
-logging.basicConfig(filename=full_log_path, level=logging.DEBUG,
-                    format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="a")
-
-logging.basicConfig(filename=LOGS, level=logging.DEBUG,
-                    format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="a")
-'''
 
 def check_number_of_users(user_id):
     count = count_users(user_id)

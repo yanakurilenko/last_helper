@@ -1,6 +1,6 @@
 import requests
 import logging
-from config import IAM_TOKEN, FOLDER_ID
+from config import IAM_TOKEN, FOLDER_ID, TOKEN
 
 def text_to_speech(text):
     headers = {
